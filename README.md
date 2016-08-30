@@ -1,2 +1,4 @@
 # Tsyrenzhapova
-Used forthe Multimedia, Planning and Design class
+Used for the Multimedia, Planning and Design class
+
+I will add a file to the repository. 
