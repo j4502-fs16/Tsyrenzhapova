@@ -43,7 +43,8 @@ h2 {
 
 body{
   background-color: #F2F2F2;
-  text-align: center;
+  text-align: left;
+  width: 90%;
 }
 
 #nav {
