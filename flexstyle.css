@@ -64,12 +64,13 @@ a:link{
   font-weight:500;
   color:  #001A68;
   font-style: normal;
+  text-align: center;
 }
 
 .wrapper{
   display: flex;
   flex-flow: row wrap;
-  font-weight: bold
+  font-weight: bold;
   height: 25px;
 }
 
@@ -87,7 +88,7 @@ a:link{
     height: 100%;
 }
 
-.navigation a:link, a:visited {
+.navigation a:link, .navigation a:visited {
 	  display:block;
     color: white;
     font-weight: bold;
