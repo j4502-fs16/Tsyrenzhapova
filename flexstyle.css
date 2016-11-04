@@ -130,6 +130,7 @@ margin:0 auto;
     text-decoration: none;
     margin-top: auto;
     border: none;
+    max-width: 95%;
 }
 
 img {
@@ -142,8 +143,12 @@ display: none;
 }
 }
 
-
 @media screen and (min-width: 600px){
+
+.footer {
+max-width: 100%;
+}
+
   #pageBody{
     display:flex;
     flex-flow:row;
@@ -165,7 +170,6 @@ display: none;
     width: 80%;
     padding: 10px;
   }
-
 
 @media screen and (min-width: 1000px){
 
@@ -190,6 +194,10 @@ display: none;
     margin-top: 128px;
     display: flex;
     flex-flow: column;
+  }
+
+  p {
+    max-width: 80%;
   }
 
   #content{
