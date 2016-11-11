@@ -54,7 +54,15 @@ h3 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 1rem;
+}
 
+h4 {
+font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
+font-size: 1.3rem;
+color: #001A68;
+text-align: left;
+margin-left: 45px;
+margin-bottom: 0;
 }
 
 body{
@@ -144,7 +152,7 @@ margin:0 auto;
 
 nav {
   text-align: left;
-  margin-left: 50px;
+  margin-left: 45px;
 }
 
 .footer {
@@ -188,6 +196,21 @@ display: none;
 }
 
 @media screen and (min-width: 700px){
+
+.navigation {
+    display: flex;
+    flex-flow: row;
+  }
+
+  .navigation li {
+    background-color: #730099;
+    border-bottom: none;
+    /*height: 25px;*/
+  }
+
+h4 {
+  display: none;
+}
 
 .footer {
 max-width: 100%;
@@ -305,5 +328,9 @@ max-width: 100%;
 
     .navigation a {
       border: none;
+    }
+
+    h4 {
+      display: none;
     }
 }
