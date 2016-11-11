@@ -70,6 +70,7 @@ a:link{
 .header, .main, .navigation, .aside, .footer{
   flex: 1 100%;
   padding: 10px;
+  flex-flow: row;
 }
 
 .aside {
@@ -90,6 +91,10 @@ a:link{
   flex-flow: row wrap;
   font-weight: bold;
   height: 25px;
+}
+
+.navigation {
+  display: none;
 }
 
 .navigation li{
@@ -137,6 +142,11 @@ margin:0 auto;
   border-bottom: none;
 }
 
+nav {
+  text-align: left;
+  margin-left: 50px;
+}
+
 .footer {
     display: block;
     color: white;
@@ -161,11 +171,14 @@ img {
     font-size: 1.75em;
     width: 2em;
     text-decoration: none;
+    text-align: left;
+    margin:0 auto;
 }
 
 .navigation ul li {
     border-top: none;
     display: block;
+}
 }
 
 @media (max-width: 599px) {
@@ -183,7 +196,7 @@ max-width: 100%;
 .header {
     display: flex;
     display: none;
-    flex-flow: row;
+    flex-flow: column;
     margin: 0;
     padding: 0 10px;
 }
@@ -212,6 +225,7 @@ max-width: 100%;
 
   .navigation ul {
       display: flex;
+      flex-flow: row;
   }
 
   .menu-trigger {
@@ -220,6 +234,11 @@ max-width: 100%;
 }
 
 @media screen and (min-width: 1000px){
+
+  .header {
+      display: flex;
+      flex-flow: row;
+    }
 
   .wrapper{
     display: flex;
