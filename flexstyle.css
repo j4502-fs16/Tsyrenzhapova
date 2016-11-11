@@ -44,6 +44,19 @@ h2 {
   margin-bottom: 1rem;
 }
 
+h3 {
+  font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #001A68;
+  text-align: left;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+
+}
+
 body{
   background-color: #F2F2F2;
   text-align: center;
@@ -109,6 +122,12 @@ a:link{
     color: white;
 }
 
+.navigation a {
+display: block;
+text-decoration: none;
+padding: 20px 30px;
+}
+
 .paragraph {
 width: 80%;
 margin:0 auto;
@@ -137,16 +156,36 @@ img {
   width: 80%;
 }
 
+.menu-trigger {
+    order: 1;
+    font-size: 1.75em;
+    width: 2em;
+    text-decoration: none;
+}
+
+.navigation ul li {
+    border-top: none;
+    display: block;
+}
+
 @media (max-width: 599px) {
 .aside {
 display: none;
 }
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 700px){
 
 .footer {
 max-width: 100%;
+}
+
+.header {
+    display: flex;
+    display: none;
+    flex-flow: row;
+    margin: 0;
+    padding: 0 10px;
 }
 
   #pageBody{
@@ -170,6 +209,15 @@ max-width: 100%;
     width: 80%;
     padding: 10px;
   }
+
+  .navigation ul {
+      display: flex;
+  }
+
+  .menu-trigger {
+      display: none;
+  }
+}
 
 @media screen and (min-width: 1000px){
 
