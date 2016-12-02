@@ -187,11 +187,33 @@ img {
     border-top: none;
     display: block;
 }
+
+.map-wrapper {
+    overflow:hidden;
+    padding-bottom:75%;
+    position:relative;
+    height:0;
+}
+
+.map-wrapper iframe{
+    left:0;
+    top:0;
+    position:absolute;
+}
 }
 
 @media (max-width: 599px) {
 .aside {
 display: none;
+}
+
+.map-wrapper {
+width: 80% !important;
+padding-bottom: 59% !important;
+}
+
+.map-wrapper iframe {
+width: 80% !important;
 }
 }
 
@@ -254,6 +276,14 @@ max-width: 100%;
   .menu-trigger {
       display: none;
   }
+
+  .map-wrapper {
+  width: 100% !important;
+  padding-bottom: 59% !important;
+  }
+
+  .map-wrapper iframe{
+  width: 100% !important;
 }
 
 @media screen and (min-width: 1000px){
@@ -332,5 +362,14 @@ max-width: 100%;
 
     h4 {
       display: none;
+    }
+
+    .map-wrapper {
+    width: 100% !important;
+    margin-right: 25px;
+      }
+
+    .map-wrapper iframe{
+    width: 100% !important;
     }
 }
